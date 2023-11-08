@@ -8,9 +8,9 @@ for i in range(sub):
     s, num, gr = input().split(" ")
 
     total_num += int(num)
-    print("과목성적- 영어" ,gr)
-    print("과목성적 - 인덱스 " ,grade_arr.index(gr))
-    print("과목성적 - 숫자" ,score_arr[grade_arr.index(gr)])
+    # print("과목성적- 영어" ,gr)
+    # print("과목성적 - 인덱스 " ,grade_arr.index(gr))
+    # print("과목성적 - 숫자" ,score_arr[grade_arr.index(gr)])
     sc += (score_arr[grade_arr.index(gr)] * int(num))
 
 print("%.2f" % round(sc/total_num + 10**-10, 2))

@@ -19,6 +19,8 @@
 
 
 #-------------------------start-----------------------
+# 이렇게 하면 답은 나오나 , 런타임 오류가 뜬다
+
 
 #0.5반올림해주기 위해서
 # import decimal
@@ -47,9 +49,9 @@ for i in range(a):
   lens = len(b)
   gradeplus.append(b[lens-2])
   gradeplus.append(b[lens-1])
-  print('과목당 점수' , gradeplus)
+  # print('과목당 점수' , gradeplus)
   point.append(b[lens-4])
-  print("과목당 수업시수", point)
+  # print("과목당 수업시수", point)
 
  # 실수형 변환학점
   if gradeplus[0] == "A":
@@ -97,8 +99,8 @@ lastpoint = bigpoint/pluspoint
 
 # round 사용하여 , 소수점 둘쨰자리까지 출력
 
-print("반올림 전" , lastpoint)
-print("가공" , round(lastpoint + 10**-10,2))
+# print("반올림 전" , lastpoint)
+# print("가공" , round(lastpoint + 10**-10,2))
 print(round(lastpoint + 10**-10,2))
 
 
@@ -112,3 +114,5 @@ print(round(lastpoint + 10**-10,2))
 # Analytic_Geometry_and_Calculus_1 3 B+
 # Fortran_Programming 3 B+
 # C_Language_Programming 3 A+
+
+
