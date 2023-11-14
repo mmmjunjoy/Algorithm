@@ -8,15 +8,34 @@
 # 120
 # 5056
 
-a = int(input())
-s=[]
-x=[]
-new = ''
-for i in range(a):
-  b = input()
-  for i in range(len(b)):
-    s.append(b[i])
-  print("리스트에 담기" ,s)
-  for i in range(len(b)):
-    x.append(s.pop())
-  print("거꾸로 리스트" ,x)
+# a = int(input())
+# 나의 문제
+
+# s=[]
+# x=[]
+# new = ''
+# for i in range(a):
+#   b = input()
+#   for i in range(len(b)):
+#     s.append(b[i])
+#   print("리스트에 담기" ,s)
+#   for i in range(len(b)):
+#     x.append(s.pop())
+#   print("거꾸로 리스트" ,x)
+
+# 정답
+# 알게 된 영역
+# 거꾸로 하기 위해서는 / [::-1]
+# [::-1] -> int 상태일떄는 안된다.
+
+s = int(input())
+
+for i in range(s):
+    b = input()
+    bs = b[::-1]
+
+    result = str(int(b) + int(b[::-1]))
+    if result == result[::-1]:
+        print("YES")
+    else:
+        print("NO")
