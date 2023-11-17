@@ -10,7 +10,49 @@
 
 
 
-# 처음 , N 과 M의 수
+# # 처음 , N 과 M의 수
+
+# a = input().split()
+
+# n = a[0]
+# m = a[1]
+
+# nstop = int(n)
+
+# nm = int(n)+int(m)
+
+
+# result = []
+# final = []
+
+# # for i in range(int(n)):
+# #   result.append(input())
+  
+
+# # input(' ')
+
+# # for j in range(int(m)):
+# #   result.append(input())
+
+# # 리스트컴프리헨션
+# [ result.append(input()) for i in range(nm)]
+
+# # 중복 제거
+
+# for value in result:
+#     if value not in final:
+#         final.append(value)
+
+# okay = sorted(final)
+
+
+# count = len(okay)
+# print(count)
+# for i in range(len(okay)):
+#    print(okay[i])
+
+
+
 
 a = input().split()
 
@@ -22,22 +64,17 @@ nstop = int(n)
 nm = int(n)+int(m)
 
 
-result = []
+
 final = []
 
-# for i in range(int(n)):
-#   result.append(input())
-  
+# 빈 리스트에 값을 채울떄 , append가 아닌 인덱스를 사용하여 접근방법으로 변경
+# result = []
+result = [0] * nm
 
-# input(' ')
+# # 리스트컴프리헨션
+for i in range(nm):
+    result[i] = input()
 
-# for j in range(int(m)):
-#   result.append(input())
-
-# 리스트컴프리헨션
-[ result.append(input()) for i in range(nm)]
-
-# 중복 제거
 
 for value in result:
     if value not in final:
