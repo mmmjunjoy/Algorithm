@@ -53,6 +53,9 @@
 
 
 
+import sys
+input = sys.stdin.readline
+
 
 a = input().split()
 
@@ -65,9 +68,7 @@ nm = int(n)+int(m)
 
 
 
-final = []
-
-# 빈 리스트에 값을 채울떄 , append가 아닌 인덱스를 사용하여 접근방법으로 변경
+# 빈 리스트에 값을 채울떄 , append가 아닌 인덱스를 사용하여 접근방법으로 변경.
 # result = []
 result = [0] * nm
 
@@ -75,7 +76,7 @@ result = [0] * nm
 for i in range(nm):
     result[i] = input()
 
-
+final = []
 for value in result:
     if value not in final:
         final.append(value)
