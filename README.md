@@ -24,6 +24,6 @@
 
 
 
-
+[![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=sjb2010)](https://solved.ac/sjb2010)
 
 
