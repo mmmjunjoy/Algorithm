@@ -15,7 +15,7 @@ for i in range(n):
     name,state = map(str, input().split())
 
     if name in namelist:
-        if state =="leave":
+        # if state =="leave":
             namelist.remove(name)
 
     if name not in namelist :
